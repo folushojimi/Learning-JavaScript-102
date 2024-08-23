@@ -529,3 +529,60 @@ console.log(hobbies.endsWith('t.'))
 //begin searching the String object. 
 //If omitted, search starts at the beginning 
 //of the string.
+
+
+
+// GETTING FOR A SUBSTRING 
+const exampleString = 'hotdog is a good food';
+
+//slice()
+const dog = exampleString.slice(3,6)
+console.log(dog)
+
+//split() a string
+ const superSample = 'The quick brown fox jumps over the lazy dog'
+
+ //split()
+ const letters = superSample.split(' ')
+
+ console.log(letters)
+
+
+//reverse()
+
+const superX = 'test';// tset
+
+const reversedString = superX.split("").reverse().join("")
+console.log(reversedString)
+
+
+//repeat()
+
+const dogSays = 'woof'
+
+console.log(dogSays.repeat(5))
+
+//trim()
+const tooMuch = ' He has too much money '
+
+const letstrimthis = tooMuch.trim()
+console.log(letstrimthis)
+
+
+// FUNCTION PRACTICE IN JAVASCRIPT
+//  const ecomerce =()=>{
+
+// const shoppingCart = [10, 30, 20, 50, 60 ]
+
+
+//  }
+
+
+
+
+
+
+
+
+// ARRAY IN JAVASCRIPT 
+
