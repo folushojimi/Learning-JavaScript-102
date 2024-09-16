@@ -20,84 +20,23 @@ const someFunction = () =>{
  
 someFunction()
 // Block Scope 
+{let block = 'BlockSample'
+   console.log(block)
+}
 
+if (true){
+   console.log('we thanks God')
+}
 
+for (let i = 0; i > 10; i++){
+   console.log(i)
+}
 
+// while (){
+   
+// }
 
-// // OPERATORS  
-// ARITHMETHIC OPERATOR 
-
-console.log(2+2);
-console.log(8-5);
-console.log(10 * 2);
-console.log(10 / 2);
-console.log(15 % 2);//reminder not divide
-console.log(2 ** 3) //exponentiation
  
-// increment operator (only works with let)
-let people = 5
-people++
-console.log(people)
-
-// decrement  operator(only works with let)
-let student = 10
-student--
-console.log(student)
-
-
-// CONCATINATION OPERATOR
-console.log('Happy' + ' ' + 'People')
-console.log('Game' + ' ' + 'Oclock' + ' ' + 10)
-
-// ASSIGNMENT OPERATOR
-let children = 10 // ordinary assignment operator
-children += 5
-children *=5
-children /=5
-children -=5
-children %= 5
-console.log(children)
-
-//COMPARISON OPERATOR 
-// ==
-// !=
-// >
-// <
-// >=
-// <=
-// ===
-// !==
-
-console.log(10 == 10)
-console.log(10 == 5)
-console.log(10 != 5)
-console.log(10 > 5)
-console.log(10 < 5 )
-console.log(10 >= 10)
-console.log(10 >= 11)
-console.log(10 <= 10)
-
-
-//LOGICAL OPERATOR  
-// // OR OPERATOR(||)
-// // Basics of OR OPERATOR
-// alert( true || true ); // true
-// alert( false || true ); // true
-// alert( true || false ); // true
-// alert( false || false ); // false
-
-// AND OPERATOR(&&)
-console.log(true && true)
-console.log(true && false )
-console.log(false && true)
-console.log(10 > 5 && 3)
-console.log(true > false)
-console.log(false > true)
-
-//NOT (!)
-console.log(!true )
-console.log(!false)
-
 
 // //  THE CONTROL STATEMENT
  
@@ -569,20 +508,144 @@ const letstrimthis = tooMuch.trim()
 console.log(letstrimthis)
 
 
+// DAY 2 PRACTICE OF PREVIOUSE TOPICS 
+
+
 // FUNCTION PRACTICE IN JAVASCRIPT
-//  const ecomerce =()=>{
 
-// const shoppingCart = [10, 30, 20, 50, 60 ]
+// 1. Calculate the Total Price of Items in a Shopping Cart
+ const ecomerce = (priceOfProduct) => {
+ let totalSum = 0
+
+ for (let i = 0; i < priceOfProduct.length; i++)
+      totalSum += priceOfProduct[i]
+
+ return totalSum
+ }
+
+//shopping cart 
+const shoppingCart = [10, 30, 20, 50, 60 ]
+console.log('total product price is' + ecomerce(shoppingCart))
 
 
-//  }
+
+
+//2. Check if a String is a Palindrome
+
+function isPalindrome(str){
+
+   // removes all the non alphanumeric and converts to lowercase 
+const cleanedStr = str.toLowerCase().replace(/[^a-z0-9)]/g, '');
+
+//check if the cleaned string is the same as foward and backward
+
+const reverseStr = cleanedStr.split('').reverse().join('')
+
+return cleanedStr === reverseStr
+
+}
+
+console.log(isPalindrome('race car'))
+ 
+
+// STINGS PRACTICE IN JAVASCRIPT 
+
+// 1. Write a function that takes a user's
+//  first name and last name as input and returns
+//   a greeting message using template literals (backticks).
+
+const greetUser=(firtsname,lastname)=>{
+console.log(`Good morning Mr ${firtsname}, ${lastname}`)
+}
+
+console.log(greetUser('Emmanuel', 'ogunjimi'))
+
+
+//2. Write a function that takes a string as
+//  input and returns the number of characters 
+//  in that string.
+
+const stringOp=(str)=>{
+
+let charCount = ''
+charCount = str
+const kipo = charCount.length
+
+return kipo
+}
+
+
+console.log(stringOp('welcome home '))
+
+
+ 
+
+// 3.Write a function that checks if a specific 
+// word appears at least twice in a given string 
+// using indexOf() and lastIndexOf(). The function
+//  should return true if the word appears more than once,
+//   otherwise false.
+
+const wordsTime =()=>{
+   
+}
 
 
 
+// 4. Write a function that takes a string as input and
+//  returns an object with two properties: the string
+//   in uppercase and the string in lowercase.
+
+// 5.Write a function that extracts a substring from a given
+//  string using slice(), trims any leading or trailing whitespace
+//   using trim(), and checks if the substring starts with a specific
+//    character using startsWith() and ends with another character using endsWith().
+
+
+// REVIEW OF STRING 
+const guestList = 'Our guests are: emma, jacob, isabella, ethan';
+ 
+//1. Get a length of the string. Store it in a variable called length.
+const lenght =  guestList.length
+console.log(lenght)
+
+//2.Uppercase the entire string.
+//Store the result in variable called uppercaseGuestList. 
+
+const uppercaseGuestList = guestList.toUpperCase()
+console.log(uppercaseGuestList)
+
+
+// 3.Check wether 'ETHAN' is on the uppercaseGuestList.
+// Store the answer in a variable called isEthaOnnTheList.
+// The data type of the variable must be a boolean.
+const isEthaOnnTheList = uppercaseGuestList.includes('ETHAN');
+console.log(isEthaOnnTheList); // true
+
+
+//4. Create a substring that only contains the following:
+//'EMMA, JACOB, ISABELLA, EHTAN'.
+//Store the answer in a variable called substringGuests.
+const substringGuests = uppercaseGuestList.slice(16)
+console.log(substringGuests);
+
+5. //Out of the substring you just created,
+//create an array of names of people that are on the list 
+//Store that array in a variable called guests.
+const guests = substringGuests.split(",")
+console.log(guests)
 
 
 
+// ARRAY IN JAVASCRIPT // SAMPLE
+function suma(arr) {
+   let sum = 0
 
+   for (let i = 0; i < arr.length; i++)
+      sum += arr[i];
 
-// ARRAY IN JAVASCRIPT 
+   return sum
+}
 
+let arr = [12, 3, 4, 15]
+console.log('sum of given array is' + suma(arr))
