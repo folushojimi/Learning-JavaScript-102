@@ -1,153 +1,23 @@
-
-// SOME ADVANCE JAVASCRIPT THAT WILL BE USEFUL FOR INTERVIEWS 
-// SCOPE IN JAVASCRIPT
-// Global Scope
-const nick ='tolu'
-
-const nickOP = () =>{
-console.log(nick)
-}
-
-nickOP()
-
-// Function Scope / Local Scope 
-const someFunction = () =>{
-   const name = 'folusho'
-   console.log(name)
-
-}
-
- 
-someFunction()
-// Block Scope 
-{let block = 'BlockSample'
-   console.log(block)
-}
-
-if (true){
-   console.log('we thanks God')
-}
-
-for (let i = 0; i > 10; i++){
-   console.log(i)
-}
-
-// while (){
-   
-// }
-
- 
-
-// //  THE CONTROL STATEMENT
- 
-//  const age = 11
-
-//  if (age > 18) {
-// console.log('You may enter');
-//  }else if (age == 18){
-//     console.log('You just turned 18')
-//  }else {
-//     console.log('Grow up!')
-//  }
-
-
-//  let light = 0
-
-//  if (light === 14){
-//    console.log('blue')
-//    }else if (light > 14){
-//    console.log('red')
-//    }else{
-//       console.log('switch off the light')
-//    }
-
-let food = 10
-
-
-if (food > 12) {
-   console.log(`bring ${food} food for people`)
-}else {
-   console.log('NO, FOOD HERE!')
-}
-
-
-// let workTime = prompt('what is the recommended work time', '');
- 
-// if (workTime === '8am') {
-// alert('punctual')
-// }else if(workTime === '8:30am'){
-//    alert('not bad you are still welcome')
-// }else{
-//    alert('null')
-// }
-
-// TEST FOR SEMICOLON
-// console.log('this will show an error')
-// [1,2].forEach(alert)
-
-// alert('this code will work now');
-// [1,2].forEach(alert)
-
-
-const age = 19;
-const isCool = true;
-
-//is cool and is above the age of 18
-
-if(isCool && age > 18){
-   console.log('you may enter!')
-}else {
-   console.log('you cannot enter')
-}
-
-//testing out operators 
-// AND 
-
-console.log(true && false)
-console.log(false && true)
-console.log(true && true)
-// OR 
-console.log(true || true )
-console.log(true || false)
-console.log(false || false)
-
-// NOT
-let a = true
-
-console.log(!a)
-
-
-// EQUALITY
-console.log(true === true) 
-console.log(true === false)
-console.log(false === true)
-
-// GREATER THAN/ LESS THAN
-console.log(true > false) 
-console.log(false > true)
-console.log(true < false)
-
- 
 //STRING IN FULL DETAILS 
 
-const single = 'Hello'
-const double = "Hello"
+const single = 'Hello' // single quote
+const double = "Hello" //double qoute
 
+//backticks
 const summ = (a, b) => a * b;
-
 const backticks = `${summ(2, 7)}`
 
 console.log(single)
 console.log(double)
 console.log(backticks)
 
+//strings with multiple qoute inside of it
 const greeter = "Hi, I\'m folusho, but people call me \"jimi\""
 console.log(greeter)
 
 
 // STRINGS METHODS IN JAVASCRIPT 
-
-
+ 
 // .LENGTH PROPERTY
 const namee = 'jimi is good programmer'
 // console.log(namee[0])
@@ -372,17 +242,3 @@ console.log(substringGuests);
 const guests = substringGuests.split(",")
 console.log(guests)
 
-
-
-// ARRAY IN JAVASCRIPT // SAMPLE
-function suma(arr) {
-   let sum = 0
-
-   for (let i = 0; i < arr.length; i++)
-      sum += arr[i];
-
-   return sum
-}
-
-let arr = [12, 3, 4, 15]
-console.log('sum of given array is' + suma(arr))
