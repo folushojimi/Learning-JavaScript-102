@@ -1,3 +1,9 @@
+//CONDITIONAL STATEMENT - They are block of code written to determine 
+//should some certain operations or effect takes place in our code
+//we basically have 2 types of conditional statemnet in javascript.IF STATEMNT & SWITCH STATEMENT
+
+
+
 // IF STATEMENT 
  
 //  const age = 11
@@ -48,11 +54,47 @@ if (food > 12) {
 // alert('this code will work now');
 // [1,2].forEach(alert)
 
+// practice on if statement 
+
+// 1. A prompted program for the best laptop memory for a graphic designer
+//prompt converted to number
+// let devGroup = Number(prompt('Whats the best memory for a graphic designer',))
+
+//     if (devGroup === 100){
+//     alert('Super Good Laptop')
+//     }else if(devGroup <= 99){
+//     alert('Manageable Laptop')
+//     }else if(devGroup > 100){
+//         alert('beastmode')
+//     }else{
+//     alert('null')
+//     }
+
+//2. A basic console program for verifying only student 18 and above for a boxing class
+
+// let boxingAge = 10
+
+// if (boxingAge >= 18){
+// console.log('Good fit')
+// }else{
+//    console.log('Sorry we cannot take you in')
+// }
+
+const ayenfe = 'nobody'
+
+if (ayenfe === 'myPartner'){
+console.log(true)
+}else if (ayenfe === 'myfriend'){
+   console.log(true)
+}else{
+   console.log(false)
+}
 
 
-
-
-
+// ADVANCE IF STATEMENT
 
 
 // SWITCH STATMENT
+
+
+//TERNARY OPERATOR
