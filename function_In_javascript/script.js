@@ -1,4 +1,5 @@
 // FUNCTION IN JAVASCRIPT 
+//Function helps us to create code that can be used multiple times
 
 // FUNCTION DECLARATION (DEFINING FUNCTION)
 function square(number){
@@ -93,7 +94,7 @@ function square(number){
     }
     Market(200, 100, 0)
  
- //THE RETURN KEYWORD 
+ //THE RETURN KEYWORD -The return value is "returned" back to the "caller":
  
  // Returns undefined
  
@@ -260,3 +261,4 @@ function square(number){
  }
  
  happy()
+  
