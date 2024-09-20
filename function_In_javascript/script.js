@@ -1,4 +1,38 @@
 // FUNCTION IN JAVASCRIPT 
+//Function declaration
+//Function expression
+//Arrow function 
+//parameter and argument 
+//Return statement 
+
+
+//AnonymosFunction - without a name, often used in callbacks 
+//or immediately invoked function expressions (IIFEs).
+
+
+//Callback function
+
+//Higher Order Function - takes other function as argurment 
+//or return function as output
+
+
+//Closures - A closure is created when a function is defined
+ //inside another function and accesses variables from its parent scope.
+ function closureSamp(){
+
+let sample = 'new people'
+
+function innerFunc(){
+   console.log(sample)
+}
+
+return innerFunc()
+
+
+ }
+
+
+
 //Function helps us to create code that can be used multiple times
 
 // FUNCTION DECLARATION (DEFINING FUNCTION)

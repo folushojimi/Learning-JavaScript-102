@@ -57,11 +57,12 @@ const includesJavaScript = hobbies.includes('react');
 console.log(includesJavaScript)
 
 
-//startsWith()
+//startsWith() //endsWith() - checks if the strings
+// starts or ends with certain text - result is boolean
 console.log(hobbies.startsWith(''))
-console.log(hobbies.endsWith('t.'))
+console.log(hobbies.endsWith())
 
-//endsWith()
+ 
 
 
 
@@ -78,14 +79,15 @@ console.log(hobbies.endsWith('t.'))
 
 
 
-// GETTING FOR A SUBSTRING 
+// GETTING FOR A SUBSTRING - 
+
 const exampleString = 'hotdog is a good food';
 
-//slice()
+//slice() - to cut out some certain string
 const dog = exampleString.slice(3,6)
 console.log(dog)
 
-//split() a string
+//split() - splits srings into an array
  const superSample = 'The quick brown fox jumps over the lazy dog'
 
  //split()
@@ -94,8 +96,8 @@ console.log(dog)
  console.log(letters)
 
 
-//reverse()
-
+//reverse() - used to rearrange strings in reverse order
+//but with the help of split and join
 const superX = 'test';// tset
 
 const reversedString = superX.split("").reverse().join("")
