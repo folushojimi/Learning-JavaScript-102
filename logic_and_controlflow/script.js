@@ -1,3 +1,8 @@
+// LOOPS IN DETAILS
+
+
+
+
 //logic and control flow in javascript 
 //The 3 terminology of everyloops in javascript 
 //1.initailise
