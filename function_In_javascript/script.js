@@ -6,8 +6,41 @@
 //Return statement 
 
 
-//AnonymosFunction - without a name, often used in callbacks 
+//AnonymosFunction - is a function without a name, often used in callbacks 
 //or immediately invoked function expressions (IIFEs).
+
+//1. Assigning an Anonymous Function to a Variable
+const greet = function() {
+   console.log("Hello, World!");
+ };
+ 
+ greet(); // Output: "Hello, World!"
+
+//2. Anonymous Function as a Callback
+const numbers = [1, 2, 3];
+const squares = numbers.map(function(num) {
+  return num * num;
+});
+
+console.log(squares); // Output: [1, 4, 9]
+
+// or instead like this 
+const medics = ['paracitamol', 'panadol', 'ibupain']
+
+const medicalitics = medics.map((caps)=>
+caps.toUpperCase())
+
+
+
+//3. Immediately Invoked Function Expression (IIFE)
+(function() {
+   console.log("This function runs immediately!");
+ })();
+
+//4. Anonymous Arrow Function
+const add = (a, b) => a + b;
+
+console.log(add(2, 3)); // Output: 5
 
 
 //Callback function
